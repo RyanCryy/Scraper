@@ -1,0 +1,106 @@
+/* Base styling */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: cream; /* Set cream color for the background */
+    color: black; /* Default text color is black */
+    overflow: hidden;
+}
+
+/* Loading Screen */
+.loading-screen {
+    display: flex; /* Use flex to center the gif and buttons */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    position: relative;
+}
+
+.loading-gif {
+    width: 25vw; /* Set width to 1/4 of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Info Text */
+.info-text {
+    margin-top: 15px; /* Space between gif and info text */
+    font-size: 16px; /* Set font size for the info text */
+    text-align: center; /* Center the text */
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+    margin-top: 20px; /* Space between info text and buttons */
+}
+
+/* Results Container */
+.results-container {
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.9); /* White container for results */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    border: 1px solid #e0e0e0; /* Border for the results container */
+}
+
+/* Email List */
+#email-list {
+    list-style: none;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+    max-height: 300px; /* Set a max height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Optional border for visibility */
+    margin: 10px 0; /* Margin around the email list */
+}
+
+/* Button Styles */
+.button {
+    display: inline-block; /* Make it behave like a button */
+    padding: 12px 25px;
+    background-color: #e84118;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px; /* Space between buttons */
+    font-family: 'Exo', sans-serif;
+}
+
+.button:hover {
+    background-color: #c23616;
+    transform: translateY(-2px);
+}
+
+/* Back Button */
+.back-button {
+    padding: 12px 25px;
+    background-color: #e84118;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    font-family: 'Exo', sans-serif;
+}
+
+.back-button:hover {
+    background-color: #c23616;
+    transform: translateY(-2px);
+}

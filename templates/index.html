@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>ARCX Marketing Scraper</title>
+</head>
+<body>
+    <header class="logo-header">
+        <h1>ARCX Marketing</h1>
+    </header>
+    <div class="product-description">
+        <p>Find emails easily for your marketing campaigns. Just enter your niche and location, and we’ll handle the rest.</p>
+        <p>Contact: RYAN@ARCXINC.AGENCY</p>
+        <div class="button-container">
+            <a href="https://www.arcxmarketing.com" target="_blank" class="website-link-button">Visit ARCX Marketing</a>
+            <a href="https://www.arcxmarketing.com/scraper" target="_blank" class="website-link-button">Go to Scraper</a>
+        </div>
+    </div>
+    <form method="POST" action="/">
+        <input type="text" name="query" placeholder="Enter Niche (e.g., Marketing Agency)" required>
+        <input type="text" name="location" placeholder="Enter Location (e.g., Singapore)" required>
+        <button type="submit">Start Scraping</button>
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+    </form>
+
+    <!-- Bubbles positioned only in the corners -->
+    <div class="bubble corner-top-left"></div>
+    <div class="bubble corner-top-right"></div>
+    <div class="bubble corner-bottom-left"></div>
+    <div class="bubble corner-bottom-right"></div>
+</body>
+</html>
